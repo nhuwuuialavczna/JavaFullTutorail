@@ -1,4 +1,4 @@
-Collection
+Test.Collection
 ======================
 - Đây là 1 interface gốc đại diện cho 1 nhóm các đối tượng, các đối tượng được xem như
 các element (các yếu tố). Một vài các các collection cho phép các phần tử được giống nhau
@@ -10,7 +10,7 @@ như List và Set. Interface này thường được dùng để chuyển các c
 - Một tập hợp gồm các phần tử trùng nhau và không có thứ tự, có thể sử dụng trực tiếp 
 interface này
 
-- Tất cả các mục đích chung của Collection là hiện thực các class (nó thường được hiện
+- Tất cả các mục đích chung của Test.Collection là hiện thực các class (nó thường được hiện
 thực gián tiếp thông qua các interface con) nên nó cung cấp 2 tiêu chuẩn khởi tạo:
 Thứ nhất là 1 constructor không có tham số truyền vào, nó sẽ tạo ra 1 collection rỗng
 Thứ 2 là 1 constructor có 1 tham số truyền vào, đó là kiểu của các phần tử. Constructor thứ 
@@ -96,7 +96,7 @@ thức này và ngược lại.
     + NullPointerException: Nếu phần tử cần xóa là null
     
 #Các phương thức làm việc với 1 số lượng lớn
-##9. boolean containsAll(Collection<?> c)
+##9. boolean containsAll(Test.Collection<?> c)
 
 - Phương thức trả về true nếu như tất cả phần tử của c đều nằm trong collection
 - Phương thức này kiểm tra dựa trên phương thức equals thuộc về phần tử của collection
@@ -104,7 +104,7 @@ thức này và ngược lại.
     + ClassCastException: Nếu 1 hoặc nhiều phần tử của c không cùng kiểu được khai báo
     + NullPointerException: Nếu danh sách c bị null.
     
-##10.  boolean addAll(Collection<? extends E> c);
+##10.  boolean addAll(Test.Collection<? extends E> c);
 
 - Thêm tất cả phần tử của c vào collection. Các hành vi của hoạt động này là không 
 xác định nếu bộ sưu tập được chỉ định được sửa đổi trong khi tiến hành hoạt động.
@@ -118,7 +118,7 @@ xác định nếu bộ sưu tập được chỉ định được sửa đổi 
     
 - Phương thức này sử dụng phương thức add của chính collection
 
-##11. boolean removeAll(Collection<?> c);    
+##11. boolean removeAll(Test.Collection<?> c);    
 - Xóa tất cả các phần tử tồn tại trong c ra khỏi collection, nói cách khác, sau khi
 gọi phương thức này thì sẽ không còn phần tử thuộc c trong collection
 - Trả về true nếu collection bị thay đổi và false nếu ngược lại
@@ -145,7 +145,7 @@ của phần tử được xóa
     
 - Có từ phiên bản java 1.8
 
-##13. boolean retainAll(Collection<?> c)
+##13. boolean retainAll(Test.Collection<?> c)
 
 - Phương thức này sẽ giữ lại cho collection các phần tử của collection c
 - Nói cách khác, nó sẽ xóa các phần tử có trong collection nếu nó không có trong c
@@ -158,7 +158,7 @@ của phần tử được xóa
     
 ##14. void clear();
 - Xóa toàn bộ phần tử có trong collection
-- Collection sẽ null ngay sau khi gọi phương thức này
+- Test.Collection sẽ null ngay sau khi gọi phương thức này
 
 #Comparison and hashing
 

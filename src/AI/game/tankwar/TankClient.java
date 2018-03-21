@@ -343,7 +343,7 @@ public class TankClient extends Frame implements ActionListener {
 
 	private class PaintThread implements Runnable {
 		public void run() {
-			// TODO Auto-generated method stub
+			// TODO Auto-generated Test.method stub
 			while (printable) {
 				repaint();
 				try {
@@ -388,7 +388,7 @@ public class TankClient extends Frame implements ActionListener {
 		} else if (e.getActionCommand().endsWith("Stop")) {
 			printable = false;
 			// try {
-			// Thread.sleep(10000);
+			// Test.Thread.sleep(10000);
 			//
 			// } catch (InterruptedException e1) {
 			// // TODO Auto-generated catch block

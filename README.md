@@ -9,11 +9,11 @@ Java 8 Demo
          
     3. String
         Stream in String
-    4. Relection
+    4. Test.Relection
         
-    5. Exception
+    5. Test.Exception
     
-    6. Thread
+    6. Test.Thread
 
    
 ```

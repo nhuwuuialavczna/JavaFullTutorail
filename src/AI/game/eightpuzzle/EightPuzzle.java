@@ -16,7 +16,7 @@ public class EightPuzzle extends JFrame {
         jMenuBar = new JMenuBar();
         jMenu = new JMenu("Hệ thống");
         jMenuBFS = new JMenuItem("BFS");
-        jMenuDFS = new JMenuItem("DFS");
+        jMenuDFS = new JMenuItem("BFS");
         jMenuAtar = new JMenuItem("A *");
         jMenuStart = new JMenuItem("Start");
         jMenu.add(jMenuBFS);

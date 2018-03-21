@@ -10,13 +10,13 @@ public class PlayerHuman implements Player {
 
 	@Override
 	public Point movePoint(int player) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated Test.method stub
 		return null;
 	}
 
 	@Override
 	public int getPlayerFlag() {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated Test.method stub
 		return playerFlag;
 	}
 
@@ -27,7 +27,7 @@ public class PlayerHuman implements Player {
 
 	@Override
 	public BoardState getBoardState() {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated Test.method stub
 		return boardState;
 	}
 

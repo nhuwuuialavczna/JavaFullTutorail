@@ -5,7 +5,7 @@ import java.awt.Graphics;
 public interface IModel {
 
 	/**
-	 * All method call by controller or object container
+	 * All Test.method call by controller or object container
 	 */
 
 	/** start thread */

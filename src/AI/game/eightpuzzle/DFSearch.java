@@ -25,7 +25,7 @@ public class DFSearch {
 
 
     /*
-     * Helper method to check to see if a SearchNode has already been evaluated.
+     * Helper Test.method to check to see if a SearchNode has already been evaluated.
      * Returns true if it has, false if it hasn't.
      */
     private static boolean checkRepeats(SearchNode n) {

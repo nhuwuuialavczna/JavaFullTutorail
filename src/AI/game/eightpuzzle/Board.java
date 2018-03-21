@@ -27,7 +27,7 @@ public class Board extends JPanel implements Runnable, ActionListener {
 
         for (int i = 0; i < 9; i++) {
             try {
-                images[i] = ImageIO.read(this.getClass().getResourceAsStream("/game/eightpuzzle/Images/" + i + ".jpg"));
+                images[i] = ImageIO.read(this.getClass().getResourceAsStream("/AI/game/eightpuzzle/Images/" + i + ".jpg"));
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -87,7 +87,7 @@ public class Board extends JPanel implements Runnable, ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if (e.getSource() == EightPuzzle.jMenuDFS) {
-            Board.loai = "DFS";
+            Board.loai = "BFS";
             b = BFSearch.search(a, true);
             i = b.size();
             goal = covertStack();

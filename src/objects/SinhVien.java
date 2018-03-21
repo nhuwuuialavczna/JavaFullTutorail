@@ -1,6 +1,6 @@
 package objects;
 
-public class SinhVien {
+public class SinhVien implements Comparable<SinhVien> {
     public String name;
     public int tuoi;
 
@@ -12,5 +12,12 @@ public class SinhVien {
     @Override
     public String toString() {
         return name + "\t" + tuoi;
+    }
+
+    @Override
+    public int compareTo(SinhVien o) {
+        if (tuoi > o.tuoi) return 1;
+        if (tuoi < o.tuoi) return -1;
+        return 0;
     }
 }

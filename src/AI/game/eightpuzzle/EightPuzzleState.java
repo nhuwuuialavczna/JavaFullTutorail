@@ -21,8 +21,6 @@ public class EightPuzzleState implements State {
 
     private int manDist = 0;
 
-    private Action act;
-
     private final int[] GOAL = new int[]
             {1, 2, 3, 4, 5, 6, 7, 8, 0};
     private int[] curBoard;
@@ -36,7 +34,6 @@ public class EightPuzzleState implements State {
         curBoard = board;
         setOutOfPlace();
         setManDist();
-        this.act = act;
     }
 
     /**
@@ -140,9 +137,7 @@ public class EightPuzzleState implements State {
         return ret;
     }
 
-    public Action getAct() {
-        return act;
-    }
+
 
     /**
      * Is thought about in terms of NO MORE THAN 4 operations. Can slide tiles
@@ -195,10 +190,7 @@ public class EightPuzzleState implements State {
      */
     @Override
     public boolean isGoal() {
-        if (Arrays.equals(curBoard, GOAL)) {
-            return true;
-        }
-        return false;
+        return Arrays.equals(curBoard, GOAL);
     }
 
     /**
@@ -218,16 +210,13 @@ public class EightPuzzleState implements State {
     }
 
     /**
-     * Overloaded equals method to compare two states.
+     * Overloaded equals Test.method to compare two states.
      *
      * @return true or false, depending on whether the states are equal
      */
     @Override
     public boolean equals(State s) {
-        if (Arrays.equals(curBoard, ((EightPuzzleState) s).getCurBoard())) {
-            return true;
-        } else
-            return false;
+        return Arrays.equals(curBoard, ((EightPuzzleState) s).getCurBoard());
 
     }
 
